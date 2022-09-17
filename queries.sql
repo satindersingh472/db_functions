@@ -12,13 +12,13 @@ insert into for_sale_cars (make,model,`year`,dealership_id)values('dodge','charg
 ('honda','pilot',2022,3),
 ('honda','crv',2021,3);
 
-SELECT make, model, year
-from for_sale_cars fsc order by  `year` DESC ;
+SELECT fsc.make, fsc.model, year
+from for_sale_cars fsc order by fsc.`year` DESC ;
 
-SELECT name, location, date_established 
-from dealership d order by date_established ASC  limit 1; 
+SELECT d.name, d.location, d.date_established 
+from dealership d order by date_established limit 1; 
 
 select fsc.make, fsc.model,fsc.`year`
 from for_sale_cars fsc inner join dealership d on d.id = fsc.dealership_id
 where fsc.year > 2020
-order by `year` ASC 
+order by fsc.`year` 
