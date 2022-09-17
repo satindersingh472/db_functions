@@ -40,8 +40,8 @@ from dealership d inner join for_sale_cars fsc on d.id = fsc.dealership_id
 GROUP by d.id 
 having count(fsc.id) >=4;
 
-SELECT count(fsc.id)
+SELECT count(fsc.id), d.id
 from dealership d inner join for_sale_cars fsc on d.id = fsc.dealership_id 
-where fsc.`year` >= 2021
+where fsc.`year` >= 2021 and fsc.model like ('%x%')
 GROUP by d.id
 HAVING count(fsc.id) >= 3;
