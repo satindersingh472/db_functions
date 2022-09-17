@@ -22,3 +22,26 @@ select fsc.make, fsc.model,fsc.`year`
 from for_sale_cars fsc inner join dealership d on d.id = fsc.dealership_id
 where fsc.year > 2020
 order by fsc.`year` 
+
+SELECT  count(id)
+from for_sale_cars fsc where fsc.`year` = 2019;
+
+SELECT count(fsc.id)
+from dealership d inner join for_sale_cars fsc on d.id = fsc.dealership_id
+GROUP by d.id
+HAVING count(fsc.id) >3;
+
+SELECT count(fsc.id)
+from for_sale_cars fsc inner join dealership d on d.id = fsc.dealership_id 
+group by d.id;
+
+select count(fsc.id), d.id,d.name
+from dealership d inner join for_sale_cars fsc on d.id = fsc.dealership_id 
+GROUP by d.id 
+having count(fsc.id) >=4;
+
+SELECT count(fsc.id)
+from dealership d inner join for_sale_cars fsc on d.id = fsc.dealership_id 
+where fsc.`year` >= 2021
+GROUP by d.id
+HAVING count(fsc.id) >= 3;

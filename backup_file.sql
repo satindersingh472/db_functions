@@ -66,7 +66,7 @@ CREATE TABLE `for_sale_cars` (
 
 LOCK TABLES `for_sale_cars` WRITE;
 /*!40000 ALTER TABLE `for_sale_cars` DISABLE KEYS */;
-INSERT INTO `for_sale_cars` VALUES (12,'dodge','charger',2012,1),(13,'chrysler','300',2010,2),(14,'honda','accord',2016,3),(15,'jeep','4*4',2021,1),(16,'chrysler','200',2022,2),(17,'honda','civic',2019,3),(18,'dodge','challenger',2020,1),(19,'chrysler','sebring',2017,2),(20,'honda','pilot',2022,3),(21,'honda','crv',2021,3);
+INSERT INTO `for_sale_cars` VALUES (12,'dodge','charger',2021,1),(13,'chrysler','300',2010,2),(14,'honda','accord',2021,3),(15,'jeep','4*4',2021,1),(16,'chrysler','200',2021,2),(17,'honda','civic',2019,3),(18,'dodge','challenger',2022,1),(19,'chrysler','sebring',2021,2),(20,'honda','pilot',2022,3),(21,'honda','crv',2022,3);
 /*!40000 ALTER TABLE `for_sale_cars` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -83,4 +83,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-17 13:44:40
+-- Dump completed on 2022-09-17 15:35:20
